@@ -63,7 +63,9 @@ const App = () => {
 
         annotationManager.addAnnotation(annot);
         annotationManager.redrawAnnotation(annot);
-        await annotationManager.applyRedactions([annot]);
+
+        // If you want to automatically apply redactions then uncomment the following line
+        // await annotationManager.applyRedactions([annot]);
         quads = [];
       }
 
